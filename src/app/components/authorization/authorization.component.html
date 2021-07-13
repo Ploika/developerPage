@@ -62,9 +62,9 @@
     </div>
 
     <div class="sixth">
-      <mat-form-field class="frameworks_version" appearance="fill">
+      <mat-form-field *ngIf="myFormGroup.controls.framework.valid" class="frameworks_version" appearance="fill">
         <mat-label>Version</mat-label>
-        <select matNativeControl [formControl]='frameworkVersion'>
+        <select matNativeControl [formControl]='frameworkVersion' >
           <optgroup label="Angular">
             <option value="1.1.1">1.1.1</option>
             <option value="1.2.1">1.2.1</option>
@@ -82,9 +82,6 @@
           </optgroup>
         </select>
       </mat-form-field>
-      <div class="message" *ngIf="!frameworkVersion.valid">
-        <p class='validation'>Please select a version after selection framework!</p>
-      </div>
     </div>
 
     <div class="seventh">
