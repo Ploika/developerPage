@@ -1,0 +1,111 @@
+.main{
+  position: relative;
+}
+.title{
+  margin-top: 50px;
+  text-align: center;
+}
+.first{
+  position: absolute;
+  margin-left: 280px;
+}
+.second{
+  position: absolute;
+  margin-left: 590px;
+}
+.third{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 280px;
+}
+.fourth{
+  position: absolute;
+  margin-left: 590px;
+  margin-top: 100px;
+}
+.fifth{
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 280px;
+}
+.sixth{
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 590px;
+}
+.seventh{
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 280px;
+}
+.eighth{
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 590px;
+}
+.date_of_birth{
+  width: 250px;
+  text-align: center;
+}
+.example-full-width{
+  text-align: center;
+  width: 250px;
+}
+.frameworks{
+  width: 250px;
+}
+.frameworks_version{
+  width: 250px;
+}
+.email{
+  width: 250px;
+}
+.hobby{
+  width: 250px;
+}
+.period_hobby{
+  width: 250px;
+}
+.message{
+  text-align: center;
+  color: red;
+}
+.btn {
+  width: 440px;
+  height: 50px;
+  background: linear-gradient(270deg, #1EA39B 0%, #38EF7D 100%);
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 400px;
+  margin-left: 335px;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.btn::before{
+  content: '';
+  display: block;
+  width: 50px;
+  height:100%;
+  position: absolute;
+  background-color: #fff;
+  transform: skewX(-20deg);
+  top: 0;
+  filter: blur(15px);
+  left: -200px;
+  animation: xx 3000ms ease-in-out infinite;
+}
+@keyframes xx {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 150%;
+  }
+}
+.error {
+  background: linear-gradient(270deg, #db5b11 0%, #a71c1c 100%);
+}
